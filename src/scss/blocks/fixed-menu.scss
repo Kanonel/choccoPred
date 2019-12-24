@@ -7,6 +7,10 @@
 
 .fixed-menu__item.active .fixed-menu__dot{
     border-color: $white;
+    box-shadow: 0 0 2px rgba(0,0,0,.5);
+    &:before {
+        box-shadow: 0 0 2px rgba(0,0,0,.5);
+    }
 }
 
 .fixed-menu__dot {
@@ -17,6 +21,7 @@
     border: 0.0625rem solid transparent;
     position: relative;
     margin-bottom: 0.9375rem;
+    
 
     &:hover {
         border-color: $white;
@@ -32,5 +37,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        box-shadow: 0 0 2px rgba(0,0,0,.5);
     }
 }

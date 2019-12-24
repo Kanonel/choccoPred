@@ -46,6 +46,17 @@ const eventsInit = () => {
         }
     });
 
+    $(".player__mute").on("click", e => {
+        e.preventDefault();
+        const mute = $(e.currentTarget);
+
+        if (mute.hasClass("unmute")) {
+            player.unmute();
+        } else {
+            player.mute();
+        }
+    });
+
     $(".player__playback").on("click", e => {
         const bar = $(e.currentTarget);
         const newButtonPosition = e.pageX - bar.offset().left;

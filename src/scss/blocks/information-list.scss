@@ -9,6 +9,9 @@
 .information__item {
     margin-right: 9%;
     display: flex;
+    @include phones {
+        margin-right: 1%;
+    }
 }
 
 .information__item:last-child {
@@ -26,6 +29,9 @@
     margin-right: 0.5625rem;   
     overflow: hidden;
     flex: 0 0 auto;
+    @include phones {
+        margin-right: .1rem;
+    }
 }
 
 .icon-information {

@@ -10,12 +10,19 @@
     background-size: cover;
     
     &:after {
-        content: url('../img/forma/wild.png');
-        bottom: 85%;
+        content: '';
+        background-image: url('../img/forma/wild.png');
+        background-size: cover;
+        width: 13rem;
+        height: 15.1rem;
+        bottom: 84%;
         right: -42px;
         position: absolute;
         @include tablets {
             bottom: 89%;
+            width: 9rem;
+            height: 10.1rem;
+            right: -33px;
         }
         @include phones {
             display: none;
@@ -40,8 +47,8 @@
 
     &:after {
         content: url('../img/forma/list.png');
-        top: 57%;
-        right: 0%;
+        top: 60%;
+        right: -2%;
         position: absolute;
         @include tablets {
             display: none;   
@@ -150,10 +157,10 @@
     outline: none;
     resize: none;
     @include tablets {
-        height: 9rem;
+        height: 7rem;
     }
     @include phones {
-        height: 9rem;   
+        height: 5rem;   
     }
 }
 
@@ -326,7 +333,7 @@
 
 .form__row--sub {
     @include tablets {
-        margin-left: 25%;
+        margin-left: 9%;
     }
 }
 

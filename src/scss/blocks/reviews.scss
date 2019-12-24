@@ -19,13 +19,16 @@
 
     }
     @include phones {
-        padding-top: 2rem;   
+        padding-top: 0rem;   
     }
 }
 
 .reviews__tit {
     @include tablets {
         margin-bottom: 0.5rem;
+    }
+    @include phones {
+        margin-bottom: 0rem;
     }
 }
 
@@ -52,6 +55,9 @@
         content: url('../img/reviews/ellips.png');
         left: 41.5%;
         position: absolute;
+        @include phones {
+            left: 36.5%;
+        }
     }
 }
 
@@ -68,9 +74,8 @@
         height: 28.125rem;
     }
     @include phones {
-        margin: 0;
-        margin-top: 3rem; 
-        height: 28rem;  
+        margin: 2.5rem 0 0; 
+        height: 30rem;  
     }
 }
 
@@ -94,8 +99,8 @@
         height: 11rem;  
     }
     @include phones {
-        max-width: 8rem;
-        max-height: 8rem;   
+        max-width: 6rem;
+        max-height: 6rem;
     }
 }
 

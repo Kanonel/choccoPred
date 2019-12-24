@@ -22,8 +22,9 @@
         top: 90%;
         left: 8%;
         position: absolute;
+        z-index: 40;
         @include tablets {
-            top: 93%;
+            top: 91%;
         }
         @include phones {
             display: none;   

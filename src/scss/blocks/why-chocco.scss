@@ -15,12 +15,18 @@
     }
 
     &:after {
-        content: url('../img/reviews/chocco.png');
-        top: 71%;
+        content: '';
+        background-image: url('../../img/reviews/chocco.png');
+        background-size: cover;
+        width: 10rem;
+        height: 19.7rem;
+        top: 73%;
         left: 0;
         position: absolute;
         @include tablets {
-            top: 80%;
+            width: 8rem;
+            height: 15.7rem;
+            top: 73%;
         }
         @include phones {
             display: none;
@@ -45,6 +51,9 @@
     @include tablets {
         margin-bottom: 0;
     }
+    @include phones {
+        margin-top: 2rem;
+    }
 }
 
 .why-chocco__desc {
@@ -54,10 +63,12 @@
     font-weight: 400;
     margin-bottom: 3.5625rem;
     @include tablets {
-        margin-bottom: 1rem;   
+        margin-bottom: 0rem;
+        font-size: 17px;   
     }
     @include phones {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        font-size: 15px;
     }
 }
 
@@ -95,10 +106,12 @@
         margin-bottom: 1rem;  
     }
     @include phones {
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
         display: flex;
         flex-direction: row;
-        padding: 0
+        padding: 0;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -118,9 +131,11 @@
         height: 5rem;
     }
     @include phones {
-        width: 15rem;
-        height: 7rem;
-        margin-right: 1rem;
+        width: 13rem;
+        height: 5rem;
+        margin-right: 0.5rem;
+        margin-top: 0;
+        margin-left: 0.5rem;
     }
 }
 
@@ -131,8 +146,8 @@
     font-weight: 700;
     margin-bottom: 1.5625rem;
     @include tablets {
-        margin-bottom: 0rem;  
-        font-size: 22px; 
+        margin-bottom: 0;
+        font-size: 19px; 
     }
     @include phones {
         margin-bottom: 1rem;
@@ -143,7 +158,7 @@
     color: $black;
     font-size: 3rem;
     @include tablets {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     @include phones {
         margin-bottom: 0.1rem;
@@ -159,6 +174,7 @@
     }
     @include phones {
         padding: 0;
+        padding-right: 4%;
     }
 }
 

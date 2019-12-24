@@ -8,34 +8,53 @@
     position: relative;
     align-items: center;
     justify-content: center;
+    @include phones {
+        padding-top: 3rem;
+    }
 
     &:before {
-        content: url('../../img/bar-chocco/list2.png');
-        top: 38%;
-        right: 87%;
+        content: '';
+        background-image: url('../../img/bar-chocco/list2.png');
+        background-size: cover;
+        width: 5rem;
+        height: 6.1rem;
+        top: 29%;
+        right: 94%;
         position: absolute;
         @include tablets {
-            top: 16%;
-            right: 76%;
+            top: 7%;
+            right: 72%;
+            width: 4rem;
+            height: 5.1rem;
         }
         @include phones {
-            top: 13%;
-            right: 80%;
+            top: 8%;
+            right: 76%;
+            width: 2.4rem;
+            height: 3.1rem;
         }
     }
 
     &:after {
-        content: url('../img/bar-chocco/list.png');
+        content: '';
+        background-image: url('../../img/bar-chocco/list.png');
+        background-size: cover;
+        width: 8rem;
+        height: 5.7rem;
         top: 67%;
-        right: 52%;
+        right: 50%;
         position: absolute;
         @include tablets {
-            top: 44%;
-            right: 21%;
+            top: 34%;
+            right: 13%;
+            width: 6rem;
+            height: 4.3rem;
         }
         @include phones {
-            top: 32%;
-            right: 9%;
+            top: 25%;
+            right: 11%;
+            width: 4rem;
+            height: 2.9rem;
         }
     }
 }
@@ -208,7 +227,12 @@
     @include tablets {
         position: absolute;
         right: 0;
-        top: 0;
+        top: 9px;
+    }
+    @include phones {
+        width: 4rem;
+        height: 4rem;
+        top: 8px;
     }
 }
 
@@ -218,6 +242,10 @@
     fill: $white;
     margin-top: 0.625rem;
     margin-bottom: 0.2rem;
+    @include phones {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 .structure__title {

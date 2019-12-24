@@ -44,8 +44,11 @@
             left: -5%;
             top: -5%;
             position: absolute;
+            @include tablets {
+                left: 11%;
+            }
             @include phones {
-                left: 25%;
+                left: 21%;
             }
         }
     }

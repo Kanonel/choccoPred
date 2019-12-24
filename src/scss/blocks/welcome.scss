@@ -1,0 +1,152 @@
+.welcome {
+    background: url("../img/chocco/fon.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.welcome__cont {
+  position: relative;
+  &:after {
+    content: '';
+    background-image: url('../img/chocco/blackberry.png');
+    background-size: cover;
+    width: 23rem;
+    height: 8.1rem;
+    position: absolute;
+    top: 89.5%;
+    right: 6%;
+    position: absolute;
+    @include tablets {
+      top: 41.5%;
+      right: 21%;
+      width: 12rem;
+      height: 4.2rem;
+    }
+    @include phones {
+      display: none;
+    }
+  }
+  &:before {
+    content: url('../img/chocco/list.png');
+    top: 92%;
+    left: 3%;
+    position: absolute;
+    @include tablets {
+      top: 32%;
+      left: 24%;
+    }
+    @include phones {
+      display: none;
+    }
+  }
+}
+
+.welcome__content {
+  display: flex;
+  transform: scaleX(-1);
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.welcome__container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  @include tablets {
+    align-items: center;
+  }
+}
+  
+.welcome__left,
+.welcome__right {
+  float: left;
+  width: 50%;
+  transform: scaleX(-1);
+
+  @include tablets {
+    width: 100%;
+    float: none;
+  }
+  @include phones {
+    width: 100%;
+    float: none;
+  }
+}
+
+.welcome__left {
+  padding-top: 6.125rem;
+  padding-left: 5rem;
+  padding-right: 1.4375rem;
+  @include tablets {
+    text-align: center;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.welcom-describe {
+  width: 25.25rem;
+  @include tablets {
+    width: 100%;
+  }
+}
+
+.section__title {
+  margin-bottom: 1.375rem;
+  @include tablets {
+    margin-bottom: 0.1rem;
+    font-size: 2.8rem;
+    line-height: 38px;
+  }
+  @include phones {
+    font-size: 2.625rem;
+    margin-bottom: 0.5rem; 
+  }
+}
+
+.welcome__desc {
+  color: $white;
+  font-family: "Alegreya Sans";
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 3.375rem;
+  @include tablets {
+    margin-bottom: 1.5rem;
+    padding: 0px 21%;
+  }
+  @include phones {
+    padding: 0px 13%; 
+    margin-bottom: 1.5rem;
+  }
+}
+
+.welcome__links {
+  margin-bottom: 5.875rem;
+  @include tablets {
+    margin-bottom: 2.1rem;
+  }
+  @include phones {
+    margin-bottom: 2rem;
+  }
+}
+
+.welcome__img {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  max-height: 100%;
+  @include tablets {
+    max-width: 55%;
+  }
+  @include phones {
+      max-width: 63%;
+      padding-top: 2%;
+      margin-bottom: 1rem;
+  }
+}

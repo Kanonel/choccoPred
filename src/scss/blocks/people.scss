@@ -1,0 +1,58 @@
+.people {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.people__item {
+    margin-right: 0.6875rem;
+
+    /*&--active,
+    &:hover {
+    background-color: $ocean;
+    }*/
+}
+
+.people__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.people__link.active {
+    border: 5px solid #0f5a47;
+}
+
+.people__link--pic {
+    width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.reviews__block {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}   
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

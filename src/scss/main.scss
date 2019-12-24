@@ -1,0 +1,53 @@
+// color
+$black: #000000;
+$white: #fff;
+$ocean: #0f5a47;
+$grey: #666666;
+$dark_grey: #323232;
+$light_grey: #f8faf9;
+$whitetwo: #f2f5f4;
+$otherblack: #281e1e;
+$fonforma: #cfdeda;
+$border: #dde3bd;
+$icon: #b0f7ff;
+$background_bar: #f8faf9;
+$azure: #61c4d9;
+$azure-dark: #00accf;
+$ddark_grey: #2f3234;
+
+// resolutions
+$phones: 480px;
+$tablets: 768px;
+
+//fonts
+@font-face {
+    font-family: Museo Sans Cyrl;     
+    src: url(../fonts/MuseoSans/MuseoSansCyrl-500.woff);
+    src: url(../fonts/MuseoSans/MuseoSansCyrl-500.woff2);
+}
+
+// setups
+@import "./layout/normalize.scss";
+@import "./layout/layout.scss";
+@import "./layout/media.scss";
+
+// blocks
+@import "./blocks/welcome.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/information-list.scss";
+@import "./blocks/why-chocco.scss";
+@import "./blocks/bar-chocco.scss";
+@import "./blocks/team.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/how-working.scss";
+@import "./blocks/people.scss";
+@import "./blocks/forma.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/fixed-menu.scss";
+@import "./blocks/hamburgers-menu.scss";
+@import "./blocks/popup.scss";

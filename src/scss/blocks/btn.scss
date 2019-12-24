@@ -1,0 +1,17 @@
+.welcome__link {
+    padding: 1.5rem 2.125rem;
+    border-radius: 35px;
+    border: 1px solid $white;
+    background-color: $white;
+    color: $ocean;
+    font-family: "Alegreya Sans";
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.2);
+    @include tablets {
+        padding: 1rem 2.125rem;
+        box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+}

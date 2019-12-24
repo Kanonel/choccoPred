@@ -1,0 +1,38 @@
+.header {
+	padding-top: 1.5rem;
+    padding-left: 4.9375rem;
+    padding-right: 4.9375rem;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    @include tablets {
+        padding-top: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+        position: absolute;
+    }
+    @include phones {
+        position: absolute;
+    }
+}
+
+.logo {
+    color: $white;
+    font-family: "Museo Sans Cyrl";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.header__menu {
+    @include tablets {
+        display: none;
+    }
+}
+
+.contacts__header {
+    @include tablets {
+        display: none;
+    }
+}

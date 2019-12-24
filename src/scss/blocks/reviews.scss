@@ -1,0 +1,142 @@
+.reviews {
+    position: relative;
+    background-color: $white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.reviews__container {
+    display: flex;
+    justify-content: center;
+    position: relative;  
+    background-image: url('../img/reviews/strawberry.png'); 
+    background-repeat: no-repeat; 
+    background-position: right 2.25rem;
+    align-items: center;
+    @include tablets {
+        padding-top: 1rem;
+
+    }
+    @include phones {
+        padding-top: 2rem;   
+    }
+}
+
+.reviews__tit {
+    @include tablets {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.reviews__table {
+    display: flex;
+    width: 58.75rem;
+    margin-left: 5rem;
+    background-color: $light_grey;
+    margin-bottom: 1.6875rem;
+    background-image: url('../img/reviews/flower.png'); 
+    background-repeat: no-repeat; 
+    background-position: right top;
+    position: relative;
+    @include tablets {
+        width: 28.75rem; 
+        margin-left: 0;  
+        margin-bottom: 0.1rem;
+    }
+    @include phones {
+       width: 98%; 
+    }
+
+    &:after {
+        content: url('../img/reviews/ellips.png');
+        left: 41.5%;
+        position: absolute;
+    }
+}
+
+.reviews__block {
+    display: flex;
+    width: 44.1875rem;
+    margin: 3.1875rem 11.75rem 2.125rem 2.8125rem;
+    height: 19.5rem;
+    @include tablets {
+        flex-direction: column; 
+        align-items: center;  
+        margin: 0;
+        margin-top: 3.4rem;
+        height: 28.125rem;
+    }
+    @include phones {
+        margin: 0;
+        margin-top: 3rem; 
+        height: 28rem;  
+    }
+}
+
+.reviews__img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.reviews__picture {
+    max-width: 15.875rem;
+    max-height: 15.875rem;
+    overflow: hidden;
+    flex: 0 0 auto;
+    margin-right: 1.25rem;
+    @include tablets {
+        margin-bottom: 0.5rem; 
+        margin-right: 0;
+        width: 11rem;
+        height: 11rem;  
+    }
+    @include phones {
+        max-width: 8rem;
+        max-height: 8rem;   
+    }
+}
+
+.reviews__desk {
+    width: 27.0625rem;
+    display: block;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    color: $grey;
+    text-align: left;
+    @include tablets {
+        text-align: center; 
+        width: 90%;  
+    }
+}
+
+.reviews__about {
+    font-size: 30px;
+    color: $dark_grey;
+    font-weight: 500;
+    margin-bottom: 1.8125rem;
+    @include tablets {
+        margin-bottom: 0.5rem;
+        font-size: 28px;   
+    }
+    @include phones {
+        margin-bottom: 0.1rem;
+    }
+}
+
+.reviews__text-paragraph {
+    font-weight: 400;
+    margin-bottom: 1.4375rem;
+    @include tablets {
+        margin-bottom: 0.8rem;
+    }
+}
+
+.reviews__name {
+    font-weight: 500;
+    @include tablets {
+        margin-bottom: 1.8rem;
+    }
+}

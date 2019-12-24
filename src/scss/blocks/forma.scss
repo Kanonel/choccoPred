@@ -1,0 +1,363 @@
+.forma {
+    position: relative;
+    background-color: $white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: $fonforma;
+    background-image: url(../img/forma/fonforma.png); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    
+    &:after {
+        content: url('../img/forma/wild.png');
+        bottom: 85%;
+        right: -42px;
+        position: absolute;
+        @include tablets {
+            bottom: 89%;
+        }
+        @include phones {
+            display: none;
+        }
+    }
+}
+
+.forma__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;  
+    &:before {
+        content: url('../img/forma/blackberry.png');
+        bottom: 16%;
+        left: 0%;
+        position: absolute;
+        @include tablets {
+            display: none;   
+        }
+    }
+
+    &:after {
+        content: url('../img/forma/list.png');
+        top: 57%;
+        right: 0%;
+        position: absolute;
+        @include tablets {
+            display: none;   
+        }
+    }
+    @include tablets {
+        padding-top: 2rem;   
+    }
+    @include phones {
+        padding-top: 2rem;   
+    }
+}
+
+.forma__tit {
+    margin-bottom: 3%;
+    @include tablets {
+     margin-bottom: 2%;   
+    }
+    @include phones {
+        font-size: 2rem;
+        margin-bottom: 1%;   
+    }
+}
+
+.section__title--green {
+    @include phones {
+        font-size: 2rem;   
+    }
+}
+
+.form {
+    display: flex;
+    max-width: 58.75rem;  
+    text-align: left;
+    margin: 0 auto;
+    @include tablets {
+        width: 63%;
+    }
+    @include phones {
+        width: 100%;   
+    }
+}
+
+.form__wrap {
+    display: flex;
+    @include tablets {
+        flex-direction: column;   
+    }
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 1.25rem;
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.radio-buttons {
+    display: flex;
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: 3%;
+    @include tablets {
+        margin-bottom: 0;
+    }
+}
+
+.form__col {
+    flex: 1;
+    margin-right: 1.25rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.input__elem {
+    width: 100%;
+    height: 3.6875rem;
+    padding: 1.375rem 0.6875rem;
+    border: 3px solid #fff;
+    outline: none;
+    @include tablets {
+        height: 3rem;
+    }
+}
+
+.textarea__elem {
+    width: 100%;
+    height: 12rem;
+    padding: 1.375rem 0.6875rem;
+    border: 3px solid #fff;
+    outline: none;
+    resize: none;
+    @include tablets {
+        height: 9rem;
+    }
+    @include phones {
+        height: 9rem;   
+    }
+}
+
+.form__col--button {
+    display: flex;
+}
+
+.input__text,
+.textarea__text {
+    color: $ocean;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.05px;
+}
+
+.input__elem:focus,
+.textarea__elem:focus {
+    border: 3px solid $border;
+    padding: 1.375rem 0.6875rem;
+}
+
+.radio-btn__elem,
+.check-btn__elem {
+    position: absolute;
+    visibility: hidden;
+}
+
+.radio-buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio-btn__text,
+.check-btn__text {
+    color: $ocean;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.05px;
+}
+
+.radio-btn__content,
+.check-btn__content {
+    display: flex;
+    align-items: center;
+}
+
+.radio-btn__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border-radius: 50%;
+    background-color: $white;
+    border: 1px solid $white;
+    margin-right: 0.625rem;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 0.8125rem;
+        height: 0.8125rem;
+        border-radius: 50%;
+        background-color: $ocean;
+        opacity: 0;
+    }
+}
+
+.radio-btn {
+    margin-right: 1.4375rem;
+    cursor: pointer;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.radio-btn__elem:checked + .radio-btn__content .radio-btn__button:after {
+    opacity: 1;
+}
+
+.check-btn__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    background-color: $white;
+    border: 1px solid $white;
+    margin-right: 0.625rem;
+
+    &:after {
+        content: url('../img/forma/yes.png');
+        display: block;
+        opacity: 0;
+    }
+}
+
+.check-btn {
+    margin-right: 1.4375rem;
+    cursor: pointer;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.check-btn__elem:checked + .check-btn__content .check-btn__button:after {
+    opacity: 1;
+}
+
+.btn {
+    height: 3.625rem;
+    border-radius: 35px;
+    background-color: $ocean;
+    color: $white;
+    padding: 1.0625rem 2.0625rem;
+    border: 0;
+    cursor: pointer;   
+    font-family: "Alegreya Sans";
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.form__col {
+    margin-bottom: 0.2%;
+}
+
+.form__col--button {
+    flex: 0;
+}
+
+.btn-reset {
+    height: 3.625rem;
+    background: none;
+    border: none;
+    color: $ocean;    
+    cursor: pointer; 
+    font-family: "Alegreya Sans";  
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 3.75rem; 
+    outline: none;
+}
+
+.input {
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.05px;
+}
+
+.form__row--comm {
+    @include tablets {
+        margin-bottom: 3%;
+    }
+    @include phones {
+        margin-bottom: 0.3rem;   
+    }
+}
+
+.form__row--order {
+    @include tablets {
+        margin-bottom: 1rem;
+    }
+}
+
+.form__row--sub {
+    @include tablets {
+        margin-left: 25%;
+    }
+}
+
+.radio-buttons--centr {
+    display: flex;
+    flex-direction: column;
+    @include tablets {
+        align-items: center;
+    }
+    @include phones {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.radio-btn--centr {
+    display: flex;
+    @include phones {
+        display: flex;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.section__title--green {
+    color: $ocean;
+    font-size: 3rem;
+    @include tablets {
+        font-size: 2.5rem;
+    }
+    @include phones {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+}
